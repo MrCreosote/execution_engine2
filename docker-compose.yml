@@ -149,7 +149,6 @@ services:
   mongodb:
     image: mongo:3.2
     environment:
-      # provide your credentials here
       - MONGO_INITDB_ROOT_USERNAME=travis
       - MONGO_INITDB_ROOT_PASSWORD=travis
-    ports: ["27018:27017","1:2"]
+    ports: ["27018:27017","27017:27017"]
